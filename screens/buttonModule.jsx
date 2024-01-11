@@ -1,8 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
-const windowWidth = Dimensions.get('window').width;
-const windowHeignt = Dimensions.get('window').height;
 
 export const stylesButtonModule = StyleSheet.create({
   containerButtonModule: {
@@ -29,7 +27,7 @@ export const stylesButtonModule = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "center", 
     alignItems: "center",
-    width: 148 
+    margin: 25
   }
 })
 
@@ -63,7 +61,7 @@ export default function ButtonModule() {
         </View>
 
         <Text style={{marginTop: 30, textAlign: "center", fontSize: 26 }}>Dans les autres cas relâcher le bouton en fonction de la couleur de la bande</Text>
-        <View style={{width: 300}}>
+        <View style={{width: 300, marginBottom: 50}}>
           <View style={stylesButtonModule.containerFlexButtonModule}>
             <View style={stylesButtonModule.containerButtonModuleSecondeStep}>
               <View style={stylesButtonModule.containerFlexButtonModuleSec}>
